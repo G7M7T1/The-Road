@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+    outline: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --primary-color: #2b81e4;
+    --secondary-color: #eee;
+    --white-color: #fff;
+    --grey-color: #555;
+    --light-grey-color: #777;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: var(--secondary-color);
+    margin: 3.5rem;
+    box-shadow: 0 1rem 3rem var(--grey-color);
+}
+
+.header {
+    width: 100%;
+    height: calc(100vh - 7rem);
+    background: linear-gradient(rgba(18, 113, 255, 0.5), rgba(18, 113, 255, 0.3)), url(./res/header-bg2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.header-text {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.heading {
+    font-size: 6rem;
+    color: var(--white-color);
+    text-shadow: 0.3rem 0.5rem var(--grey-color);
+}
+
+.header-paragraph {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: var(--secondary-color);
+    max-width: 70rem;
+}
+
+.logo {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+
+    h1 {
+        display: flex;
+
+        span {
+            font-size: 2rem;
+            text-transform: uppercase;
+            font-weight: 800;
+            color: var(--white-color);
+            display: block;
+            width: 3.5rem;
+            height: 3.5rem;
+        }
+    }
+}
+
+.logo h1 span:nth-child(1) {
+    animation-name: drop-letters;
+    animation-duration: 5s;
+    animation-delay: 0.1s;
+    animation-iteration-count: infinite;
+}
+
+.logo h1 span:nth-child(2) {
+    animation-name: drop-letters;
+    animation-duration: 5s;
+    animation-delay: 0.2s;
+    animation-iteration-count: infinite;
+}
+
+.logo h1 span:nth-child(3) {
+    animation-name: drop-letters;
+    animation-duration: 5s;
+    animation-delay: 0.3s;
+    animation-iteration-count: infinite;
+}
+
+.logo h1 span:nth-child(4) {
+    animation-name: drop-letters;
+    animation-duration: 5s;
+    animation-delay: 0.4s;
+    animation-iteration-count: infinite;
+}
+
+.logo h1 span:nth-child(5) {
+    animation-name: drop-letters;
+    animation-duration: 5s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+.logo h1 span:nth-child(6) {
+    animation-name: drop-letters;
+    animation-duration: 5s;
+    animation-delay: 0.6s;
+    animation-iteration-count: infinite;
+}
+
+.logo h1 span:nth-child(7) {
+    animation-name: drop-letters;
+    animation-duration: 5s;
+    animation-delay: 0.7s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes drop-letters {
+    0% {
+        transform: translateY(0);
+    }
+
+    10% {
+        transform: translateY(0);
+    }
+
+    15% {
+        transform: translateY(-100%);
+    }
+
+    20% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
