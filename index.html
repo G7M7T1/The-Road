@@ -1,40 +1,138 @@
 <!DOCTYPE html>
 <html lang="zh-hans">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="G7M7T1" />
-    <meta name="description" content="The Road - The Way on the Road" />
-    <meta name="robots" content="index,follow" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="G7M7T1"/>
+    <meta name="description" content="The Road - The Way on the Road"/>
+    <meta name="robots" content="index,follow"/>
     <title>The Road</title>
-    <link rel="shortcut icon" href="./res/logo.png" />
-    <link rel="bookmark" href="./res/logo.png" />
-  </head>
-  <body>
-    <div class="container">
-      <header class="header center">
+    <link rel="shortcut icon" href="./res/logo.png"/>
+    <link rel="bookmark" href="./res/logo.png"/>
+</head>
+<body>
+<div class="container">
+    <header class="header center">
         <div class="header-text">
-          <h1 class="heading">Around the Road</h1>
-          <p class="header-paragraph">
-            Traveling the road in the world and leaves you feedback in our site
-          </p>
+            <h1 class="heading">Around the Road</h1>
+            <p class="header-paragraph">
+                Traveling the road in the world and leaves you feedback in our site
+            </p>
         </div>
-        <img src="./res/air-balloon.png" alt="Header Image" />
+        <img
+                class="header-image"
+                src="./res/air-balloon.png"
+                alt="Header Image"
+        />
 
         <div class="logo">
-          <h1>
-            <span>t</span>
-            <span>h</span>
-            <span>e</span>
-            <span>r</span>
-            <span>o</span>
-            <span>a</span>
-            <span>d</span>
-          </h1>
+            <h1>
+                <span>t</span>
+                <span>h</span>
+                <span>e</span>
+                <span>r</span>
+                <span>o</span>
+                <span>a</span>
+                <span>d</span>
+            </h1>
         </div>
-      </header>
-    </div>
-    <script type="module" src="/main.js"></script>
-  </body>
+    </header>
+
+    <section class="popular-tours">
+        <h1 class="popular-tours-heading">The Most Popular Places</h1>
+
+        <div class="cards-wrapper">
+            <div class="card">
+                <div class="front-side">
+                    <img class="card-image" src="./img/amsterdam.jpg" alt="Amsterdam"/>
+                    <h1 class="tour-name">Amsterdam</h1>
+                    <ul class="card-list">
+                        <li class="card-list-item"><span class="info-color">3</span> days tour</li>
+                        <li class="card-list-item">Up to <span class="info-color">15</span> people</li>
+                        <li class="card-list-item"><span class="info-color">2</span> tour guides</li>
+                        <li class="card-list-item">Sleep in Bus</li>
+                    </ul>
+                </div>
+                <div class="back-side">
+                    <h3 class="tour-price">Price: $399</h3>
+                    <h3 class="card-button">Booking</h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="front-side">
+                    <img class="card-image" src="./img/paris.jpg" alt="Paris"/>
+                    <h1 class="tour-name">Paris</h1>
+                    <ul class="card-list">
+                        <li class="card-list-item"><span class="info-color">5</span> days tour</li>
+                        <li class="card-list-item">Up to <span class="info-color">20</span> people</li>
+                        <li class="card-list-item"><span class="info-color">3</span> tour guides</li>
+                        <li class="card-list-item">Sleep in Bus</li>
+                    </ul>
+                </div>
+                <div class="back-side">
+                    <h3 class="tour-price">Price: $599</h3>
+                    <h3 class="card-button">Booking</h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="front-side">
+                    <img class="card-image" src="./img/london.jpg" alt="London"/>
+                    <h1 class="tour-name">London</h1>
+                    <ul class="card-list">
+                        <li class="card-list-item"><span class="info-color">6</span> days tour</li>
+                        <li class="card-list-item">Up to <span class="info-color">10</span> people</li>
+                        <li class="card-list-item"><span class="info-color">5</span> tour guides</li>
+                        <li class="card-list-item">Sleep in hotel</li>
+                    </ul>
+                </div>
+                <div class="back-side">
+                    <h3 class="tour-price">Price: $999</h3>
+                    <h3 class="card-button">Booking</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stories">
+        <div class="video-container">
+            <video class="bg-video" autoplay muted loop>
+                <source src="./img/video.mp4" type="video/mp4">>
+            </video>
+        </div>
+        <div class="stories-wrapper">
+            <div class="story-bg">
+                <div class="story">
+                    <img class="story-image" src="./img/walk1.jpg" alt="walker">
+                    <div class="story-text">
+                        <h1 class="story-heading">
+                            Everything is getting better
+                        </h1>
+                        <p class="story-paragraph">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id minus mollitia natus necessitatibus omnis quae quis tempora voluptate. Ab adipisci atque dolorum est libero nihil nulla odio repellendus totam unde
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="story-bg">
+                <div class="story">
+                    <img class="story-image" src="./img/walk2.jpg" alt="walker">
+                    <div class="story-text">
+                        <h1 class="story-heading">
+                            This is a anther day
+                        </h1>
+                        <p class="story-paragraph">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id minus mollitia natus necessitatibus omnis quae quis tempora voluptate. Ab adipisci atque dolorum est libero nihil nulla odio repellendus totam unde
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<script type="module" src="/main.js"></script>
+</body>
 </html>
