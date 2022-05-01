@@ -17,3 +17,9 @@ document.querySelector(".open-navbar-icon").addEventListener("click", () => {
 document.querySelector(".close-navbar-icon").addEventListener("click", () => {
     container.classList.remove("change")
 })
+
+document.querySelectorAll(".nav-link").forEach((item) => {
+    item.addEventListener("click", () => {
+        container.classList.remove("change")
+    })
+})
