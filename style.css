@@ -39,13 +39,20 @@ html {
   margin: 3.5rem;
   -webkit-box-shadow: 0 1rem 3rem var(--grey-color);
           box-shadow: 0 1rem 3rem var(--grey-color);
+  overflow: hidden;
+}
+
+.navbar-icon {
+  width: 5.5rem;
+  height: 5.5rem;
+  background-color: var(--white-color);
 }
 
 .header {
   width: 100%;
   height: calc(100vh - 7rem);
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(18, 113, 255, 0.5)), to(rgba(18, 113, 255, 0.3))), url(./res/header-bg2.jpg);
-  background: linear-gradient(rgba(18, 113, 255, 0.5), rgba(18, 113, 255, 0.3)), url(./res/header-bg2.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(18, 113, 255, 0.5)), to(rgba(18, 113, 255, 0.3))), url(./img/background.jpg);
+  background: linear-gradient(rgba(18, 113, 255, 0.5), rgba(18, 113, 255, 0.3)), url(./img/background.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -98,8 +105,8 @@ html {
 .logo h1 span:nth-child(1) {
   -webkit-animation-name: drop-letters;
           animation-name: drop-letters;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
   -webkit-animation-delay: 0.1s;
           animation-delay: 0.1s;
   -webkit-animation-iteration-count: infinite;
@@ -109,8 +116,8 @@ html {
 .logo h1 span:nth-child(2) {
   -webkit-animation-name: drop-letters;
           animation-name: drop-letters;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s;
   -webkit-animation-iteration-count: infinite;
@@ -120,8 +127,8 @@ html {
 .logo h1 span:nth-child(3) {
   -webkit-animation-name: drop-letters;
           animation-name: drop-letters;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
   -webkit-animation-delay: 0.3s;
           animation-delay: 0.3s;
   -webkit-animation-iteration-count: infinite;
@@ -131,8 +138,8 @@ html {
 .logo h1 span:nth-child(4) {
   -webkit-animation-name: drop-letters;
           animation-name: drop-letters;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
   -webkit-animation-iteration-count: infinite;
@@ -142,8 +149,8 @@ html {
 .logo h1 span:nth-child(5) {
   -webkit-animation-name: drop-letters;
           animation-name: drop-letters;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
   -webkit-animation-iteration-count: infinite;
@@ -153,8 +160,8 @@ html {
 .logo h1 span:nth-child(6) {
   -webkit-animation-name: drop-letters;
           animation-name: drop-letters;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
   -webkit-animation-delay: 0.6s;
           animation-delay: 0.6s;
   -webkit-animation-iteration-count: infinite;
@@ -164,8 +171,8 @@ html {
 .logo h1 span:nth-child(7) {
   -webkit-animation-name: drop-letters;
           animation-name: drop-letters;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
   -webkit-animation-delay: 0.7s;
           animation-delay: 0.7s;
   -webkit-animation-iteration-count: infinite;
@@ -222,8 +229,8 @@ html {
   width: 35%;
   -webkit-animation-name: image-float;
           animation-name: image-float;
-  -webkit-animation-duration: 150s;
-          animation-duration: 150s;
+  -webkit-animation-duration: 300s;
+          animation-duration: 300s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
@@ -282,5 +289,366 @@ html {
             transform: translateZ(40rem);
     opacity: 1;
   }
+}
+
+.popular-tours {
+  padding: 5rem 0 10rem 0;
+}
+
+.popular-tours-heading {
+  font-size: 8rem;
+  text-align: center;
+  margin-bottom: 8rem;
+  color: var(--primary-color);
+  text-shadow: 0 0.1rem 0.2rem var(--primary-color);
+}
+
+.cards-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.card {
+  width: 35rem;
+  background-color: var(--white-color);
+  border-radius: 1.5rem;
+  overflow: hidden;
+  -webkit-box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.card-image {
+  width: 100%;
+}
+
+.front-side {
+  text-align: center;
+}
+
+.tour-name {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  margin-top: 1rem;
+  font-weight: 800;
+}
+
+.card-list-item {
+  font-size: 1.5rem;
+}
+
+.info-color {
+  color: var(--primary-color);
+}
+
+.back-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tour-price {
+  background-color: #4aaade;
+  color: var(--white-color);
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  margin: 1rem 0;
+}
+
+.card-button {
+  background-color: #dcf0fc;
+  color: var(--primary-color);
+  width: 100%;
+  padding: 1.5rem 0;
+  text-align: center;
+  font-size: 2rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin: 1rem 0 0 0;
+}
+
+.stories {
+  padding: 10rem 0;
+  position: relative;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+}
+
+.bg-video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.stories-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.story-bg {
+  background-color: var(--secondary-color);
+  padding: 5rem;
+  margin: 5rem;
+  width: 70%;
+  -webkit-box-shadow: 0 2rem 5rem rgba(50, 50, 50, 0.4);
+          box-shadow: 0 2rem 5rem rgba(50, 50, 50, 0.4);
+  -webkit-transform: skewX(20deg);
+          transform: skewX(20deg);
+}
+
+.story {
+  -webkit-transform: skewX(-20deg);
+          transform: skewX(-20deg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.story-image {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 5rem;
+}
+
+.story-text {
+  letter-spacing: 0.1rem;
+}
+
+.story-heading {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: var(--grey-color);
+  margin-bottom: 1rem;
+}
+
+.story-paragraph {
+  font-size: 1.4rem;
+  color: var(--light-grey-color);
+}
+
+.story-paragraph::first-letter {
+  margin-left: 1rem;
+}
+
+.contact {
+  padding: 15rem 0 20rem 0;
+  text-align: center;
+  background: url("./img/contact-us-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: contact-bg 30s infinite;
+          animation: contact-bg 30s infinite;
+}
+
+.contact-heading {
+  font-size: 7rem;
+  font-weight: 800;
+  letter-spacing: 0.5rem;
+  color: var(--white-color);
+  text-shadow: 0 1rem 2rem #000;
+  margin-bottom: 8rem;
+}
+
+.contact-form {
+  width: 70rem;
+  height: 50rem;
+  background-color: var(--white-color);
+  margin: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0 1rem 3rem #000;
+          box-shadow: 0 1rem 3rem #000;
+  padding: 5rem;
+}
+
+.input-group {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1rem 0;
+  position: relative;
+}
+
+.input-groups {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.input-groups .input-group {
+  width: 48%;
+}
+
+.input-group input {
+  padding: 3rem 1rem 1rem 1rem;
+  background-color: var(--secondary-color);
+  border: 0.1rem solid var(--secondary-color);
+  border-radius: 0.8rem;
+}
+
+.form-textarea {
+  padding: 3rem 1rem 1rem 1rem;
+  background-color: var(--secondary-color);
+  border: 0.1rem solid var(--secondary-color);
+  border-radius: 0.8rem;
+  max-height: 15rem;
+  max-width: 100%;
+}
+
+.input-group label {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: var(--grey-color);
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.form-btn {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  margin-top: 1rem;
+  background-color: var(--light-grey-color);
+  color: var(--white-color);
+  border-radius: 0.8rem;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: background-color 0.4s;
+  transition: background-color 0.4s;
+}
+
+.form-btn:hover {
+  background-color: var(--grey-color);
+}
+
+@-webkit-keyframes contact-bg {
+  0% {
+    background-color: #413f3f;
+  }
+  25% {
+    background-color: #d2dce7;
+  }
+  50% {
+    background-color: #8cb8ef;
+  }
+  75% {
+    background-color: #f5865b;
+  }
+  100% {
+    background-color: #413f3f;
+  }
+}
+
+@keyframes contact-bg {
+  0% {
+    background-color: #413f3f;
+  }
+  25% {
+    background-color: #d2dce7;
+  }
+  50% {
+    background-color: #8cb8ef;
+  }
+  75% {
+    background-color: #f5865b;
+  }
+  100% {
+    background-color: #413f3f;
+  }
+}
+
+.footer {
+  background-color: #000;
+  padding: 4rem 0 2rem 0;
+}
+
+.footer-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-link {
+  font-size: 2rem;
+  color: var(--white-color);
+  margin: 0 2rem;
+  -webkit-transition: color, -webkit-transform 0.3s;
+  transition: color, -webkit-transform 0.3s;
+  transition: color, transform 0.3s;
+  transition: color, transform 0.3s, -webkit-transform 0.3s;
+}
+
+.footer-link:hover {
+  color: var(--primary-color);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.footer-paragraph {
+  color: var(--white-color);
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  margin-top: 5rem;
 }
 /*# sourceMappingURL=style.css.map */
